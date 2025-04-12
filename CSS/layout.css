@@ -5,12 +5,36 @@ header {
     text-align: center;
   }
   
+  
+  
   nav {
     background-color: #1a1a1a;
     padding: 0.75rem 1rem;
     text-align: center;
   }
   
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav li::marker {
+    content: none;
+  }
   main {
     padding: 2rem;
     max-width: 800px;
@@ -30,5 +54,40 @@ header {
       display: block;
       margin: 0.5rem 0;
     }
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0047ab;
+  }
+
+  article {
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #888;
   }
   
