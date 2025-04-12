@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioPage</title>
-</head>
-
-<header>
-
-    <nav>
-
-        <ul> 
-           <li><a href="../index.html">HOMPAGE</a></li>
-           <li><a href="../BLOG/blogposts.html">BLOGS</a></li>
-           <li>PORTFOLIO</li>
-           <li><a href="../DESIGN/design.html">DESIGN</a></li>  
-           <li><a href="../IMAGES/image.html">IMAGES</a></li>  
-           <li><a href="../SCRIPTS/">SCRIPTS</a></li>
-        </ul>
-         
-    </nav>
-   
-    
-
-</header>
-
-
-<body>
-
-    <h1> WELCOME TO MY PORTFOLIO PAGE </h1> 
-    <h2>IT IS EMPTY RIGHT NOW BUT STAY TUNED FOR ALL MY CREATIONS</h2>
-    
-    
-
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portfolio of animations and drawings for DIGA3008A" />
+        <title>Portfolio | DIGA3008A</title>
+        <link rel="stylesheet" href="../CSS/base.css" />
+        <link rel="stylesheet" href="../CSS/layout.css" />
+        <link rel="stylesheet" href="../CSS/components.css" />
+        
+      </head>
+      <body>
+        <header class="site-header">
+          <div class="container">
+            <h1 class="site-title">WELCOME TO MY PORTFOLIO</h1>
+           
+          </div>
+        </header>
+      
+        <nav class="site-nav">
+          <div class="container">
+            <a href="../index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="design.html">Design</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="profile.html">Profile</a>
+            <a href="essay.html">Essays</a>
+          </div>
+        </nav>
+      
+        <main class="container">
+          <section class="portfolio-section">
+            <h2>Animations</h2>
+            <div class="grid">
+              <div class="portfolio-item">
+                <video controls src="media/animation1.mp4"></video>
+                <h3>Expressive Reaction Animation</h3>
+                <p>This animation explores timing and emotion through squash and stretch techniques.</p>
+              </div>
+              <div class="portfolio-item">
+                <video controls src="media/animation2.mp4"></video>
+                <h3>Walk Cycle Study</h3>
+                <p>A short looped walk cycle experiment focusing on weight and rhythm.</p>
+              </div>
+            </div>
+          </section>
+      
+          <section class="portfolio-section">
+            <h2>Drawings & Illustrations</h2>
+            <div class="grid">
+              <div class="portfolio-item">
+                <img src="media/drawing1.jpg" alt="Character sketch" />
+                <h3>Character Design</h3>
+                <p>Exploration of shape language and style in designing an original character.</p>
+              </div>
+              <div class="portfolio-item">
+                <img src="media/drawing2.jpg" alt="Environment concept art" />
+                <h3>Environment Concept</h3>
+                <p>A digital painting of a futuristic cityscape exploring lighting and depth.</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      
+        <footer class="site-footer">
+          <div class="container">
+            <p>&copy; 2025 Your Name – DIGA3008A</p>
+          </div>
+        </footer>
+      </body>
+      </html>

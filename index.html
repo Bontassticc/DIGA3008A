@@ -4,76 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
    
-  <h1>HELLO WORLD...</h1>
-
-  <h2>MY NAME IS BONI</h2>
-
-  <hcard> </hcard>
-
-
-   
-<img src="IMAGES/BoniCheer.jpg" alt="WitsCheer" width="300"height=400>
-
-
-
-  <a href="#about-section">About</a>
-<div id="about-section">
-
-    <h2>About Me</h2>
-    <p>
-      
-      This is the about section of our page. 
-      Im a Digital Arts Student at Wits University.
-      Im a 3rd Yea. 
-      My majors are Animation and Interactive Media
-      Im also a beginner aspiring content creator
-     </p>
-
-     <p> 
-      SOCIALS: <a href="https://www.instagram.com/Bontassticc" target="_blank" rel="noopener noreferrer">Instagram</a> , 
-      <a href="https://www.tiktok.com/Bontassticc" target="_blank" rel="noopener noreferrer">TikTok</a>
-
-
-     </p>
-
-</div>
-   
-
-<div>
-
-  <ul>
-    
-    <li><a href="BLOG/blogposts.html">BLOGS</a></li>
-
-    <li><a href="PORTFOLIO/portfolio.html">PORTFOLIO</a></li>
-    
-    <li><a href="DESIGN/design.html">DESIGN</a></li>
-
-    
-
-
-    
-    
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Welcome to My DIGA3008A Site</h1>
+        <p class="tagline">Exploring Interactive Media and Digital Art</p>
+      </div>
+    </header>
   
-  </ul>
-
-  </div>
-
-   
-
-
-   
-
-
+    <nav class="site-nav">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="design.html">Design</a>
+        <a href="./PORTFOLIO/portfolio.html">Portfolio</a>
+        <a href="profile.html">Profile</a>
+        <a href="essay.html">Essays</a>
+      </div>
+    </nav>
   
- 
+    <section class="hero">
+      <h1>Hello World</h1>
+      <p>I'm Your Name</p>
+      <a href="#about">Learn More About Me</a>
+    </section>
   
-
-
-
-
-</body>
-</html>
+    <main class="container homepage">
+      <section class="intro" id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm a 3rd-year Digital Arts student at Wits, exploring the exciting intersections of animation, design, and interactivity. This site is my journey through the DIGA3008A course, showcasing blog reflections, design work, and creative projects.</p>
+      </section>
+  
+      <section class="featured">
+        <h2>Featured Work</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3><a href="blog/week3.html">Week 3: UX and Accessibility</a></h3>
+            <p>Exploring how to make user-centered, accessible designs using visual hierarchy and responsive layouts.</p>
+          </div>
+          <div class="card">
+            <h3><a href="design.html">Design Process</a></h3>
+            <p>A deep dive into my interaction design process, including wireframes, sketches, and style guide development.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="cta">
+        <h2>Explore More</h2>
+        <p>Check out my weekly development blog and portfolio of creative work.</p>
+        <a class="btn" href="blog.html">Go to Blog</a>
+      </section>
+    </main>
+  
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Your Name – DIGA3008A</p>
+      </div>
+    </footer>
+  </body>
+  </html>
