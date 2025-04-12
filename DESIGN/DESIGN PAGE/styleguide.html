@@ -1,105 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Style guide and wireframes for DIGA3008A website project" />
-    <title>Website Style Guide</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <style>
-        body {
-          font-family: 'Inter', sans-serif;
-          line-height: 1.6;
-          padding: 2rem;
-          background-color: #fdfdfd;
-          color: #1a1a1a;
-        }
-    
-        h1, h2, h3 {
-          font-weight: 800;
-        }
-    
-        section {
-          margin-bottom: 2rem;
-        }
-    
-        .swatch {
-          display: inline-block;
-          width: 50px;
-          height: 50px;
-          margin-right: 1rem;
-          border-radius: 8px;
-        }
-    
-        .font-sample {
-          margin-bottom: 1rem;
-        }
-    
-        .button-example button {
-          padding: 0.5rem 1rem;
-          font-size: 1rem;
-          font-weight: 600;
-          background-color: #222;
-          color: white;
-          border: none;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-        }
-    
-        .button-example button:hover {
-          background-color: #444;
-        }
-    
-        .wireframe {
-          border: 2px dashed #ccc;
-          padding: 2rem;
-          margin-top: 1rem;
-        }
-      </style>
-</head>
-<body>
-
-    <header>
-        <h1>Website Style Guide & Wireframe</h1>
-      </header>
-    
-      <section>
-        <h2>Typography</h2>
-        <div class="font-sample"><strong>Font:</strong> Inter</div>
-        <p><strong>H1:</strong> 2.5rem / 800 weight</p>
-        <p><strong>H2:</strong> 2rem / 700 weight</p>
-        <p><strong>Body:</strong> 1rem / 400 weight</p>
-      </section>
-    
-      <section>
-        <h2>Color Palette</h2>
-        <div class="swatch" style="background-color: #1a1a1a;"></div> #1a1a1a (Text)<br />
-        <div class="swatch" style="background-color: #fdfdfd;"></div> #fdfdfd (Background)<br />
-        <div class="swatch" style="background-color: #0047ab;"></div> #0047ab (Accent)<br />
-        <div class="swatch" style="background-color: #ffcc00;"></div> #ffcc00 (Highlight)<br />
-      </section>
-    
-      <section>
-        <h2>Buttons</h2>
-        <div class="button-example">
-          <button>Primary Action</button>
-        </div>
-      </section>
-    
-      <section>
-        <h2>Sample Wireframe</h2>
-        <div class="wireframe">
-          <h3>Home Page Layout</h3>
-          <ul>
-            <li>Header with logo and navigation</li>
-            <li>Hero image with CTA</li>
-            <li>Blog post previews in grid</li>
-            <li>Footer with links</li>
-          </ul>
-        </div>
-      </section>
-    
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Style guide and wireframes for DIGA3008A website project" />
+        <title>Website Style Guide</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../CSS/base.css" />
+        <link rel="stylesheet" href="../../CSS/layout.css" />
+        <link rel="stylesheet" href="../../CSS/components.css" />
+      
+        <style>
+          body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            background-color: #fdfdfd;
+            color: #1a1a1a;
+          }
+      
+          h1, h2, h3 {
+            font-weight: 800;
+            margin-top: 1.5rem;
+          }
+      
+          section {
+            margin-bottom: 2rem;
+          }
+      
+          .swatch {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+            border-radius: 8px;
+            vertical-align: middle;
+          }
+      
+          .font-sample {
+            margin-bottom: 1rem;
+          }
+      
+          .button-example button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+      
+          .button-example button:hover {
+            background-color: #444;
+          }
+      
+          .wireframe {
+            border: 2px dashed #ccc;
+            padding: 2rem;
+            margin-top: 1rem;
+          }
+        </style>
+      </head>
+      
+      <body>
+      
+        <header>
+          <h1>Website Style Guide & Wireframe</h1>
+        </header>
+      
+        <main>
+      
+          <section>
+            <h2>Typography</h2>
+            <div class="font-sample"><strong>Font Family:</strong> Inter</div>
+            <p><strong>H1:</strong> 2.5rem / 800 weight</p>
+            <p><strong>H2:</strong> 2rem / 700 weight</p>
+            <p><strong>Body:</strong> 1rem / 400 weight</p>
+          </section>
+      
+          <section>
+            <h2>Color Palette</h2>
+            <p>
+              <span class="swatch" style="background-color: #1a1a1a;"></span> #1a1a1a (Text)
+            </p>
+            <p>
+              <span class="swatch" style="background-color: #fdfdfd;"></span> #fdfdfd (Background)
+            </p>
+            <p>
+              <span class="swatch" style="background-color: #0047ab;"></span> #0047ab (Accent)
+            </p>
+            <p>
+              <span class="swatch" style="background-color: #ffcc00;"></span> #ffcc00 (Highlight)
+            </p>
+          </section>
+      
+          <section>
+            <h2>Buttons</h2>
+            <div class="button-example">
+              <button>Primary Action</button>
+            </div>
+          </section>
+      
+          <section>
+            <h2>Sample Wireframe</h2>
+            <div class="wireframe">
+              <h3>Home Page Layout</h3>
+              <ul>
+                <li>Header with logo and navigation</li>
+                <li>Hero image with a call-to-action button</li>
+                <li>Blog post previews displayed in a grid layout</li>
+                <li>Footer with social/media/contact links</li>
+              </ul>
+            </div>
+          </section>
+      
+        </main>
+      
+      </body>
+      
+      </html>
