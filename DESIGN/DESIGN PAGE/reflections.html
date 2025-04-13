@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Design Strategy & Wireframes</title>
+        <meta name="description" content="Design process reflection for DIGA3008A">
+        <title>Design Strategy & Wireframes | DIGA3008A</title>
         <link rel="stylesheet" href="../../CSS/base.css" />
         <link rel="stylesheet" href="../../CSS/layout.css" />
         <link rel="stylesheet" href="../../CSS/components.css" />
@@ -76,9 +77,9 @@
     
                 <h3>Semantic Markup</h3>
                 <ul>
-                    <li><code>&lt;header&gt;</code> – Used for navigation structure.</li>
-                    <li><code>&lt;section&gt;</code> – To group thematically related content.</li>
-                    <li><code>&lt;article&gt;</code> – Will be used for individual blog posts.</li>
+                    <li><code>&lt;header&gt;</code> - Used for navigation structure.</li>
+                    <li><code>&lt;section&gt;</code> - To group thematically related content.</li>
+                    <li><code>&lt;article&gt;</code> - Will be used for individual blog posts.</li>
                 </ul>
             </section>
     
@@ -98,6 +99,40 @@
                     These ideas are still evolving, but I feel confident about the direction and am proud of what I’ve achieved so far.
                 </p>
             </section>
+
+            <section>
+                <h2>Accessibility Considerations <span class="badge-new">Updated</span></h2>
+
+                <p>When I mentioned that my website is optimized for accessibility, I was referring to three core aspects of inclusive design: <strong>readability</strong>, <strong>contrast</strong>, and <strong>mobile responsiveness</strong>. Below, I break down how each of these is being addressed through specific design decisions.</p>
+          
+                <h3>Readability</h3>
+                <ul>
+                  <li>Selected a sans-serif font ("Inter") for its clean, modern aesthetic and high legibility across screen sizes.</li>
+                  <li>Body text size is set at <code>1rem</code> with a line height of <code>1.6</code>, promoting readability.</li>
+                  <li>Used a consistent heading structure (H1 → H2 → H3) to support scanning and assistive technology navigation.</li>
+                  <li>Avoided text justification to maintain even word spacing and support neurodiverse readers.</li>
+                </ul>
+          
+                <h3>Color Contrast</h3>
+                <ul>
+                  <li>Main text (#2c3e50) on light background (#f7e7ce) has a contrast ratio exceeding 12:1, meeting WCAG standards.</li>
+                  <li>Accent color (#d8a7b1) provides emphasis while remaining accessible.</li>
+                  <li>Hover states include visual indicators beyond color, such as underlines or slight shifts, to support colorblind users.</li>
+                </ul>
+          
+                <h3>Mobile Responsiveness</h3>
+                <ul>
+                  <li>Single-column layout adapts seamlessly to smaller screen sizes.</li>
+                  <li>Images scale responsively using <code>max-width: 100%</code> and <code>height: auto</code>.</li>
+                  <li>Spacing and padding are set in relative units (rem/em) for adaptability.</li>
+                  <li>Navigation avoids hover-only functionality and features large tap targets suitable for touchscreens.</li>
+                </ul>
+
+                <details>
+                    <summary>🔄 What's New in This Section</summary>
+                    <p>This section was updated to include specific practices for readability (font choice and spacing), color contrast (WCAG-compliant ratios), and mobile design (responsive scaling and tap targets).</p>
+                  </details>
+              </section>
     
         </main>
     

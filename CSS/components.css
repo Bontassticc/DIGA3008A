@@ -173,5 +173,16 @@ nav a {
 
   }
 
+  .badge-new {
+    background-color: #0047ab;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+  
+
   
   
