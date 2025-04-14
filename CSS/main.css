@@ -38,4 +38,28 @@ html {
     padding-top: 6rem;
   }
 
+  .hero {
+    background-image: url("../IMAGES/silkk.jpeg"); /* Update the path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Makes the hero section fill the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ensures text is readable */
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .site-nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* or whatever background fits your site */
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds depth */
+  }
+  
   
