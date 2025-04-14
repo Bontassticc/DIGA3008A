@@ -44,12 +44,12 @@ nav a {
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-bottom: 0.5rem;
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .design-grid {
@@ -284,5 +284,19 @@ nav a {
     color: #777;
   }
   
+  .hero {
+    background-image: url("../IMAGES/brownish.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+    padding: 2rem;
+  }
   
   
