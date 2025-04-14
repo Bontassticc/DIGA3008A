@@ -237,5 +237,52 @@ nav a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds depth */
   }
   
+  .profile-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .post-link {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+  }
+  
+  .post-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-thumbnail img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .post-text h2 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .post-text time {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
   
   
