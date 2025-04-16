@@ -1,4 +1,4 @@
-/* Reset and base typography */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +12,7 @@
     line-height: 1.6;
   }
   
-  /* Headings */
+ 
   h1, h2, h3 {
     font-weight: 700;
   }
