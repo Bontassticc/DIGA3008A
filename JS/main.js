@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index < text.length) {
             textElement.innerHTML += text.charAt(index);
             index++;
-            setTimeout(typeLetter, 80); // 80ms delay between characters
+            setTimeout(typeLetter, 60); // 80ms delay between characters
         }
     }
 

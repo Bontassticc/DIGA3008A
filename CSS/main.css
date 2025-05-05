@@ -61,5 +61,17 @@ html {
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
   }
+
+  #typed-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    animation: blinkCursor 0.7s steps(2, start) infinite;
+    color: #333;
+}
+
   
   
