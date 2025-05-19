@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
- // Hamburger Menu Toggle
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -34,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (menuToggle && mobileMenu) {
     menuToggle.addEventListener("click", () => {
       mobileMenu.classList.toggle("show");
+      console.log("Hamburger menu clicked. Visible:", mobileMenu.classList.contains("show"));
     });
   } else {
     console.error("Menu elements not found. Check your HTML structure.");
