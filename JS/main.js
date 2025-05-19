@@ -26,13 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
-  // Hamburger Menu Toggle
+ // Hamburger Menu Toggle
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
-   menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("show");
-  });
-  
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+  } else {
+    console.error("Menu elements not found. Check your HTML structure.");
+  }
 });
 

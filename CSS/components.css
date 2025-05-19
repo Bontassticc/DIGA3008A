@@ -305,6 +305,7 @@ nav a {
   gap: 15px;
 }
 
+/* Mobile Menu Hidden by Default */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -316,23 +317,7 @@ nav a {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.mobile-menu a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 0;
-  display: block;
-}
-
-/* Hamburger Button */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #333;
+  z-index: 1000;
 }
 
 /* Mobile Styles */
@@ -350,6 +335,6 @@ nav a {
   }
 
   .mobile-menu.show {
-    display: flex;
+    display: flex; /* This should be flex to show the menu */
   }
 }
