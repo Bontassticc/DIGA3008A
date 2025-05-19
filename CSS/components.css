@@ -299,56 +299,57 @@ nav a {
     padding: 2rem;
   }
   
-  /* Mobile Menu Styles */
+  /* Default - Desktop Menu Visible, Mobile Menu Hidden */
+.desktop-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #333;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+}
+
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .site-nav .menu-container {
+  .desktop-menu {
     display: none;
   }
 
   .menu-toggle {
-    display: inline-block;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* Overlay Background for Mobile Menu */
-  .menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    transition: opacity 0.4s ease;
-    z-index: 900;
-  }
-
-  .menu-container {
-    position: fixed;
-    top: 0;
-    right: -100%; /* Hidden by default (off-screen) */
-    width: 70%;
-    height: 100vh;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    transition: right 0.4s ease; /* Smooth slide-in */
-    z-index: 1000;
-    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .menu-container.active {
-    right: 0; /* Slide-in effect */
-  }
-
-  .menu-overlay.active {
     display: block;
-    opacity: 1;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.show {
+    display: flex;
   }
 }
-

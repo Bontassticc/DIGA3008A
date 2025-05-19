@@ -26,28 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
-  // JavaScript for Mobile Menu Toggle
-document.addEventListener("DOMContentLoaded", function() {
+  // Hamburger Menu Toggle
+document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
-  const menuOverlay = document.getElementById("menu-overlay");
-
-  // Toggle Menu and Overlay
-  menuToggle.addEventListener("click", function() {
-    mobileMenu.classList.toggle("active");
-    menuOverlay.classList.toggle("active");
+   menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show");
   });
-
-  // Close menu when clicking a link or overlay
-  mobileMenu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function() {
-      mobileMenu.classList.remove("active");
-      menuOverlay.classList.remove("active");
-    });
-  });
-
-  menuOverlay.addEventListener("click", function() {
-    mobileMenu.classList.remove("active");
-    menuOverlay.classList.remove("active");
-  });
+  
 });
+
