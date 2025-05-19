@@ -298,27 +298,27 @@ nav a {
     text-align: center;
     padding: 2rem;
   }
- /* Desktop Menu Styling */
+  
+  /* Desktop Menu Styling */
 .site-nav {
   display: flex;
   justify-content: center; /* Center the menu */
   align-items: center;
-  position: relative;
+  position: relative; /* To position the hamburger menu correctly */
 }
 
-/* Desktop Menu */
-.desktop-menu {
-  display: flex;
-  gap: 15px;
-  text-align: center;
-}
-
-/* Hamburger Menu - Hidden on Desktop */
+/* Hide Hamburger on Desktop */
 .menu-toggle {
   display: none;
 }
+  /* Default - Desktop Menu Visible, Mobile Menu Hidden */
+.desktop-menu {
+  display: flex;
+  gap: 15px;
+  text-align:center
+}
 
-/* Mobile Menu - Hidden by Default */
+/* Mobile Menu Hidden by Default */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -336,26 +336,18 @@ nav a {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .desktop-menu {
-    display: none; /* Hides desktop menu */
+    display: none;
   }
 
   .menu-toggle {
-    display: block; /* Show Hamburger Button */
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #fff;
+    display: block;
   }
 
   .mobile-menu {
-    display: none; /* Hidden by default */
+    display: none;
   }
 
   .mobile-menu.show {
-    display: flex; /* Becomes visible when toggled */
+    display: flex; /* This should be flex to show the menu */
   }
 }
