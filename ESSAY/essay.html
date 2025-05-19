@@ -22,16 +22,36 @@
    
    
        
-      <nav class="site-nav">
-               <div class="container">
-                 <a href="../index.html">Home</a>
-                 <a href="../BLOG/blogposts.html">Blog</a>
-                 <a href="../DESIGN/design.html">Design</a>
-                 <a href="../PORTFOLIO/portfolio.html">Portfolio</a>
-                 <a href="../PROFILE/profile.html">Profile</a>
-                 <a href="../ESSAY/essay.html">Essays</a>
-               </div>
-             </nav>
+         <nav class="site-nav">
+  <div class="container">
+    <!-- Desktop Menu -->
+    <div class="desktop-menu">
+      <a href="index.html">Home</a>
+      <a href="./BLOG/blogposts.html">Blog</a>
+      <a href="./DESIGN/design.html">Design</a>
+      <a href="./PORTFOLIO/portfolio.html">Portfolio</a>
+      <a href="./PROFILE/profile.html">Profile</a>
+      <a href="./ESSAY/essay.html">Essays</a>
+    </div>
+
+    <!-- Hamburger Menu Button for Mobile -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="./BLOG/blogposts.html">Blog</a>
+      <a href="./DESIGN/design.html">Design</a>
+      <a href="./PORTFOLIO/portfolio.html">Portfolio</a>
+      <a href="./PROFILE/profile.html">Profile</a>
+      <a href="./ESSAY/essay.html">Essays</a>
+    </div>
+  </div>
+</nav>
+
+    
+    <!-- Overlay for Background Dim -->
+<div class="menu-overlay" id="menu-overlay"></div>
     
              <section class="hero">
                 <h1>My Essays</h1>
