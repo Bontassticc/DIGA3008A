@@ -63,4 +63,56 @@ html {
   }
   
 
-  
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .site-nav .menu-container {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Overlay Background for Mobile Menu */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: opacity 0.4s ease;
+    z-index: 900;
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden by default (off-screen) */
+    width: 70%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    transition: right 0.4s ease; /* Smooth slide-in */
+    z-index: 1000;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-container.active {
+    right: 0; /* Slide-in effect */
+  }
+
+  .menu-overlay.active {
+    display: block;
+    opacity: 1;
+  }
+}
+

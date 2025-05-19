@@ -25,35 +25,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-  // Smooth Slideshow Transition Function
+
+  // JavaScript for Mobile Menu Toggle
 document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll("a[href]");
-  
-    links.forEach(link => {
-      link.addEventListener("click", function(event) {
-        const href = this.getAttribute("href");
-  
-        if (!href.startsWith("#") && !href.includes("mailto:") && !href.includes("http")) {
-          event.preventDefault();
-          const pageOverlay = document.createElement("div");
-          pageOverlay.classList.add("page-transition");
-          document.body.appendChild(pageOverlay);
-          
-          setTimeout(() => {
-            window.location.href = href;
-          }, 500); // Adjust time to match the CSS transition duration
-        }
-      });
-    });
-  
-    window.addEventListener("load", function() {
-      const pageOverlay = document.querySelector(".page-transition");
-      if (pageOverlay) {
-        pageOverlay.classList.add("page-transition-active");
-        setTimeout(() => {
-          pageOverlay.remove();
-        }, 500); // Adjust time to match the CSS transition duration
-      }
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuOverlay = document.getElementById("menu-overlay");
+
+  // Toggle Menu and Overlay
+  menuToggle.addEventListener("click", function() {
+    mobileMenu.classList.toggle("active");
+    menuOverlay.classList.toggle("active");
+  });
+
+  // Close menu when clicking a link or overlay
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function() {
+      mobileMenu.classList.remove("active");
+      menuOverlay.classList.remove("active");
     });
   });
-  
+
+  menuOverlay.addEventListener("click", function() {
+    mobileMenu.classList.remove("active");
+    menuOverlay.classList.remove("active");
+  });
+});
