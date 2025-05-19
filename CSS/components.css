@@ -351,3 +351,25 @@ nav a {
     display: flex; /* This should be flex to show the menu */
   }
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 24px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 9999;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  opacity: 1;
+}
+

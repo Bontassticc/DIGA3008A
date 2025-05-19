@@ -38,5 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.error("Menu elements not found. Check your HTML structure.");
   }
+  
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopBtn = document.getElementById("back-to-top");
+
+  // Show button when user scrolls down 300px
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  // Scroll smoothly to top on button click
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
