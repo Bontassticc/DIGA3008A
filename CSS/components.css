@@ -299,10 +299,23 @@ nav a {
     padding: 2rem;
   }
   
+  /* Desktop Menu Styling */
+.site-nav {
+  display: flex;
+  justify-content: center; /* Center the menu */
+  align-items: center;
+  position: relative; /* To position the hamburger menu correctly */
+}
+
+/* Hide Hamburger on Desktop */
+.menu-toggle {
+  display: none;
+}
   /* Default - Desktop Menu Visible, Mobile Menu Hidden */
 .desktop-menu {
   display: flex;
   gap: 15px;
+  text-align:center
 }
 
 /* Mobile Menu Hidden by Default */
