@@ -58,3 +58,59 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".gallery-img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".close");
+  const nextBtn = document.getElementById("next");
+  const prevBtn = document.getElementById("prev");
+
+  let currentIndex = 0;
+  const imageArray = Array.from(images);
+
+  function showImage(index) {
+    const src = imageArray[index].src.replace("-thumb", ""); // adjust if needed
+    lightboxImg.src = src;
+    lightbox.style.display = "flex";
+  }
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      currentIndex = index;
+      showImage(currentIndex);
+    });
+  });
+
+  closeBtn.addEventListener("click", () => lightbox.style.display = "none");
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % imageArray.length;
+    showImage(currentIndex);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + imageArray.length) % imageArray.length;
+    showImage(currentIndex);
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) lightbox.style.display = "none";
+  });
+});
+
+async function getQuote() {
+  try {
+    const response = await fetch("https://api.quotable.io/random");
+    const data = await response.json();
+    document.getElementById("quote-text").innerText = `"${data.content}"`;
+    document.getElementById("quote-author").innerText = `— ${data.author}`;
+  } catch (error) {
+    document.getElementById("quote-text").innerText = "Could not load quote.";
+    document.getElementById("quote-author").innerText = "";
+  }
+}
+
+// Load one immediately
+document.addEventListener("DOMContentLoaded", getQuote);
