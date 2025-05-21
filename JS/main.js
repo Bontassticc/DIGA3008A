@@ -142,3 +142,57 @@ function generateQuote() {
 
 // Automatically load one on page load
 document.addEventListener("DOMContentLoaded", generateQuote);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  const searchResults = document.getElementById("searchResults");
+
+  // Sample content array - this can be pulled dynamically or expanded manually
+  const content = [
+    { title: "Blog Post", url: "./BLOG/blogposts.html" },
+    { title: "Design Page", url: "./DESIGN/design.html" },
+    { title: "Portfolio", url: "./PORTFOLIO/portfolio.html" },
+    { title: "Profile", url: "./PROFILE/profile.html" },
+    { title: "Essays", url: "./ESSAY/essay.html" },
+  ];
+
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+    searchResults.innerHTML = "";
+
+    if (query.trim() !== "") {
+      const filtered = content.filter(item => item.title.toLowerCase().includes(query));
+
+      filtered.forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="${item.url}">${item.title}</a>`;
+        searchResults.appendChild(li);
+      });
+
+      if (filtered.length === 0) {
+        searchResults.innerHTML = "<li>No results found.</li>";
+      }
+    }
+  });
+});
+
+function searchText() {
+  const input = document.getElementById("search-input").value.toLowerCase();
+  const contentElements = document.querySelectorAll("p, h1, h2, h3, li, div"); // Add or remove tags as needed
+
+  // Clear previous highlights
+  contentElements.forEach(el => {
+    el.innerHTML = el.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+  });
+
+  if (input.trim() === "") return;
+
+  contentElements.forEach(el => {
+    const text = el.textContent.toLowerCase();
+    if (text.includes(input)) {
+      const regex = new RegExp(`(${input})`, "gi");
+      el.innerHTML = el.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+    }
+  });
+}
+

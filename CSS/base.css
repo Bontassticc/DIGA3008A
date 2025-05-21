@@ -45,3 +45,10 @@ body.transitioning {
   overflow: hidden;
   position: relative;
 }
+
+
+  body {
+  cursor: url('../IMAGES/1CURSOR.png') 4 0, auto;
+}
+
+
