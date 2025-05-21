@@ -100,17 +100,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-async function getQuote() {
-  try {
-    const response = await fetch("https://api.quotable.io/random");
-    const data = await response.json();
-    document.getElementById("quote-text").innerText = `"${data.content}"`;
-    document.getElementById("quote-author").innerText = `— ${data.author}`;
-  } catch (error) {
-    document.getElementById("quote-text").innerText = "Could not load quote.";
-    document.getElementById("quote-author").innerText = "";
-  }
+//async function getQuote() {
+  //try {
+   // const response = await fetch("https://api.allorigins.win");
+
+   // if (!response.ok) {
+   //   throw new Error(`HTTP error! status: ${response.status}`);
+   // }
+  // const quotes = await response.json();
+//const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+//document.getElementById("quote-text").innerText = `"${randomQuote.text}"`;
+//document.getElementById("quote-author").innerText = `— ${randomQuote.author || "Unknown"}`;
+
+  //} catch (error) {
+    //console.error("Error fetching quote:", error);
+    //document.getElementById("quote-text").innerText = "Could not load quote.";
+    //document.getElementById("quote-author").innerText = "";
+ // }
+//}
+
+// Load a quote on page load
+//document.addEventListener("DOMContentLoaded", getQuote);
+
+// Load a new quote when button is clicked
+//document.getElementById("new-quote").addEventListener("click", getQuote);
+
+// JavaScript
+const quotes = [
+  { text: "Creativity takes courage.", author: "Henri Matisse" },
+  { text: "Art is not what you see, but what you make others see.", author: "Edgar Degas" },
+  { text: "Every artist was first an amateur.", author: "Ralph Waldo Emerson" },
+  { text: "Simplicity is the ultimate sophistication.", author: "Leonardo da Vinci" },
+  { text: "Design is intelligence made visible.", author: "Alina Wheeler" }
+];
+
+function generateQuote() {
+  const random = quotes[Math.floor(Math.random() * quotes.length)];
+  document.getElementById("quote-text").innerText = `"${random.text}"`;
+  document.getElementById("quote-author").innerText = `— ${random.author}`;
 }
 
-// Load one immediately
-document.addEventListener("DOMContentLoaded", getQuote);
+// Automatically load one on page load
+document.addEventListener("DOMContentLoaded", generateQuote);

@@ -418,12 +418,45 @@ nav a {
 #next { right: 30px; top: 50%; transform: translateY(-50%); }
 
 #quote-box {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 2px solid #444;
-  border-radius: 10px;
   text-align: center;
-  background: #f9f9f9;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#quote-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#quote-author {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#quote-box button {
+  background-color: #7c3aed; /* nice purple */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#quote-box button:hover {
+  background-color: #6b21a8;
+  transform: scale(1.05);
+}
+
+#quote-box button:active {
+  transform: scale(0.98);
 }
 
