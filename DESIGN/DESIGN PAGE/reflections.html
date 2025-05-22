@@ -26,6 +26,11 @@
 
           </header>
    
+          
+                <div id="search-container">
+  <input type="text" id="search-input" placeholder="Search this page..." />
+  <button onclick="searchText()">Search</button>
+</div>
    
        
          <nav class="site-nav">
@@ -166,6 +171,56 @@
                     <p>This section was updated to include specific practices for readability (font choice and spacing), color contrast (WCAG-compliant ratios), and mobile design (responsive scaling and tap targets).</p>
                   </details>
               </section>
+
+              <section>
+                <h2> Interface Elements <span class="badge-new">Updated</span></h2>
+                <h3> Buttons</h3>
+                <p>
+                    Buttons on the site are used to prompt user interaction, such as navigating between pages, opening blog posts, 
+                    and submitting forms. These buttons are consistently styled with rounded edges, a defined color palette, 
+                    and hover animations to give users visual feedback. They often appear as call-to-action (CTA) elements, 
+                    with clear labels like “Read More,” “View Project,” or “Back to Top.” The hover state slightly changes 
+                    the background color and cursor to indicate interactivity, supporting accessibility and enhancing user control. 
+                    On mobile, button sizes increase slightly for easier tapping, ensuring a seamless experience across all devices.
+                </p>
+
+                <h3> Cards</h3>
+                <p>
+                    Card elements are used throughout the blog, portfolio, and homepage to group content into manageable, visually distinct sections. 
+                    Each card includes a heading, an image or icon, a brief summary, and an action (like a link or button). 
+                    Cards help organize information visually while maintaining a clean layout, enabling users to scan content quickly. 
+                    Their use of shadows and spacing helps establish visual hierarchy and separation from surrounding elements. 
+                    Cards scale responsively, stacking vertically on smaller screens to preserve readability and interactivity.
+                </p>
+
+                <h3> Navigation Bar</h3>
+                <p>
+                    The navigation bar is a persistent UI component located at the top of the site. 
+                    It includes links to core sections—Homepage, Blog, Design, Essay, Profile, and Portfolio. 
+                    On large screens, it is displayed horizontally, while on mobile, it collapses into a hamburger menu to conserve space. 
+                    This responsive behavior ensures ease of navigation regardless of device. The active link is visually differentiated 
+                    (e.g., underlined or colored) to indicate the current page, helping users maintain orientation within the site. 
+                    The navigation bar is fixed in place, allowing constant access to site-wide movement.
+                </p>
+
+                <h3> Media Containers (Images, videos, Lightbox)</h3>
+                <p>
+                    Images, wireframes, and potential videos are embedded inside stylized media containers that maintain alignment 
+                    and proportion across devices. These containers may include borders, shadows, 
+                    or padding to visually separate the media from surrounding text. Some images—particularly in the design section—use a lightbox 
+                    effect that allows users to click and enlarge them without leaving the page. This enhances usability 
+                    and allows for a deeper engagement with visual content, especially where annotations or small details are important.
+                </p>
+
+                <h3> Search Bar</h3>
+                <p>
+                    In the design of the website a search bar has been added in the homepage and in all heavy content based pages. This makes it easier 
+                    speaially in heavy content based pages for users to find content they want based on a word search. 
+                    How this works is that the users will search a word in the seaarch bar, if the word is in the content on that specific Page
+                    the word will be higlighted.
+
+                </p>
+            </section>
 
              <button id="back-to-top" title="Back to Top">↑ Top</button> 
     
