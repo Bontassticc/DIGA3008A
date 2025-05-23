@@ -203,3 +203,24 @@ window.onscroll = function () {
   const scrolled = (winScroll / height) * 100;
   document.getElementById("progress-bar").style.width = scrolled + "%";
 };
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("login").style.display = "block";
+}
+
+function checkLogin() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if (password === "password123") {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("content").style.display = "block";
+
+    // Insert name into greeting
+    const greeting = document.getElementById("greeting");
+    greeting.textContent = `🎉 Welcome, ${username}!`;
+  } else {
+    document.getElementById("error").textContent = "Incorrect password 😬";
+  }
+}

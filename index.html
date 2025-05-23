@@ -16,6 +16,30 @@
    
   </head>
   <body>
+
+    <!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <p>The password is always <strong>password123</strong> 😎</p>
+    <button onclick="closePopup()">Got it!</button>
+  </div>
+</div>
+
+<!-- LOGIN FORM -->
+<div id="login" style="display: none;">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Your name">
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="checkLogin()">Login</button>
+  <p id="error" style="color: red;"></p>
+</div>
+
+<!-- WEBSITE CONTENT -->
+<div id="content" style="display: none;">
+  <h1 id="greeting">🎉 Welcome!</h1>
+  <!-- Your actual content here -->
+</div>
+
     <header class="site-header">
       <div class="container">
         <h1 class="site-title">Welcome to My DIGA3008A Site</h1>
