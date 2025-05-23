@@ -100,7 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//async function getQuote() {
+//async function getQuote() {        //I ATTEMPTED TO USE API, HOWEVER IT PROVED DIFFICULT BECUASE THE WEBSITES WERE FIGHTING AGAINST THE SCHOOLS
+                                      //SO SOMEHOW I HAVE TO FIND A SAFE WEBSITE, BECUASE THE CODE RUNS BUT IT CANT LOAD THE QUOTES.
   //try {
    // const response = await fetch("https://api.allorigins.win");
 
