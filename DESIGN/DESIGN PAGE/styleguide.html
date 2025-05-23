@@ -13,59 +13,7 @@
         <script src="../../JS/main.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
       
-        <style>
-          body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            padding: 2rem;
-            background-color: #fdfdfd;
-            color: #1a1a1a;
-          }
-      
-          h1, h2, h3 {
-            font-weight: 800;
-            margin-top: 1.5rem;
-          }
-      
-          section {
-            margin-bottom: 2rem;
-          }
-      
-          .swatch {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin-right: 1rem;
-            border-radius: 8px;
-            vertical-align: middle;
-          }
-      
-          .font-sample {
-            margin-bottom: 1rem;
-          }
-      
-          .button-example button {
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            font-weight: 600;
-            background-color: #f7e7ce;
-            color: #2c3e50;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-          }
-      
-          .button-example button:hover {
-            background-color: #d8a7b1;
-          }
-      
-          .wireframe {
-            border: 2px dashed #ccc;
-            padding: 2rem;
-            margin-top: 1rem;
-          }
-        </style>
+       
       </head>
       
       <body>
@@ -116,58 +64,68 @@
 <div id="progress-bar"></div>
     
       
-        <header>
-          <h1>Website Style Guide & Wireframe</h1>
-        </header>
-      
-        <main>
-      
-          <section>
-            <h2>Typography</h2>
-            <div class="font-sample"><strong>Font Family:</strong> Inter</div>
-            <p><strong>H1:</strong> 2.5rem / 800 weight</p>
-            <p><strong>H2:</strong> 2rem / 700 weight</p>
-            <p><strong>Body:</strong> 1rem / 400 weight</p>
-          </section>
-      
-          <section>
-            <h2>Color Palette</h2>
-            <p>
-              <span class="swatch" style="background-color: #2c3e50;"></span> #2c3e50 (Text)
-            </p>
-            <p>
-              <span class="swatch" style="background-color: #f7e7ce;"></span> #f7e7ce (Background)
-            </p>
-            <p>
-              <span class="swatch" style="background-color: #58738e;"></span> ##58738e (Accent)
-            </p>
-            <p>
-              <span class="swatch" style="background-color: #d8a7b1;"></span> #d8a7b1 (Highlight)
-            </p>
-          </section>
-      
-          <section>
-            <h2>Buttons</h2>
-            <div class="button-example">
-              <button>Primary Action</button>
-            </div>
-          </section>
-      
-          <section>
-            <h2>Sample Wireframe</h2>
-            <div class="wireframe">
-              <h3>Home Page Layout</h3>
-              <ul>
-                <li>Header with logo and navigation</li>
-                <li>Hero image with a call-to-action button</li>
-                <li>Blog post previews displayed in a grid layout</li>
-                <li>Footer with social/media/contact links</li>
-              </ul>
-            </div>
-          </section>
-      
-          <button id="back-to-top" title="Back to Top">↑ Top</button>
-        </main>
+        <header> 
+  <h1>Website Style Guide & Wireframe</h1>
+  <p>This page outlines the visual design system and layout foundation used in my website. It documents type, color, UI elements, and layout structure, supporting a consistent and user-friendly experience.</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Typography</h2>
+    <div class="font-sample"><strong>Font Family:</strong> Inter</div>
+    <p><strong>H1 (2.5rem / 800 weight):</strong> Used for main page titles to grab user attention with strong visual hierarchy.</p>
+    <p><strong>H2 (2rem / 700 weight):</strong> Used for section headers to clearly separate content areas.</p>
+    <p><strong>Body Text (1rem / 400 weight):</strong> Designed for readability in paragraphs, blogs, and general content.</p>
+    <p>The Inter typeface was chosen for its modern, clean look and strong legibility across devices and screen sizes.</p>
+  </section>
+
+  <section>
+    <h2>Color Palette</h2>
+    <p>
+      <span class="swatch" style="background-color: #2c3e50;"></span>
+      <strong>#2c3e50 (Text):</strong> A dark blue-grey used for body text and headings to provide strong contrast and readability.
+    </p>
+    <p>
+      <span class="swatch" style="background-color: #f7e7ce;"></span>
+      <strong>#f7e7ce (Background):</strong> A soft beige that provides a calm, warm base for content areas without overwhelming the eyes.
+    </p>
+    <p>
+      <span class="swatch" style="background-color: #58738e;"></span>
+      <strong>#58738e (Accent):</strong> A muted navy-blue tone used for buttons, links, and interactive elements to attract user attention.
+    </p>
+    <p>
+      <span class="swatch" style="background-color: #d8a7b1;"></span>
+      <strong>#d8a7b1 (Highlight):</strong> A soft rose-pink used to emphasize certain sections or active elements for visual interest.
+    </p>
+    <p>This palette was selected to maintain visual harmony, accessibility, and a soft, creative feel aligned with the brand tone.</p>
+  </section>
+
+  <section>
+    <h2>Buttons</h2>
+    <div class="button-example">
+      <button>Primary Action</button>
+    </div>
+    <p>Primary buttons are styled with the accent color (#58738e) and white text for contrast. They are used for key interactions like submitting forms or navigating to important sections. Hover and active states provide feedback to ensure intuitive interaction.</p>
+  </section>
+
+  <section>
+    <h2>Sample Wireframe</h2>
+    <div class="wireframe">
+      <h3>Home Page Layout</h3>
+      <ul>
+        <li><strong>Header:</strong> Contains site logo and navigation bar for intuitive access to all site sections.</li>
+        <li><strong>Hero Image:</strong> Features a large image/banner with a welcome message and call-to-action button to engage users.</li>
+        <li><strong>Blog Preview Grid:</strong> Showcases recent posts in a clean, card-style layout to improve content discoverability.</li>
+        <li><strong>Footer:</strong> Includes links to social media, contact info, and other utility links for better site navigation.</li>
+      </ul>
+      <p>This wireframe was created to reflect a mobile-first, responsive layout, following design principles like hierarchy, spacing, and balance.</p>
+    </div>
+  </section>
+
+  <button id="back-to-top" title="Back to Top">↑ Top</button>
+</main>
+
 
         
         <footer>
