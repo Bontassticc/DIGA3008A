@@ -515,3 +515,13 @@ nav a {
 }
 
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 6px;
+  background-color: #007bff;
+  z-index: 1000;
+  transition: width 0.25s ease-out;
+}
