@@ -544,3 +544,35 @@ nav a {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   text-align: center;
 }
+
+.weather-widget {
+  background: #f1eadf;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+.weather-info p {
+  margin: 0.4rem 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.blog-post-nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7e7ce;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.blog-post-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+}
+.blog-post-nav a:hover {
+  text-decoration: underline;
+}
+

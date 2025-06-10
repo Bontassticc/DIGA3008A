@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".gallery-img");
   const lightbox = document.getElementById("lightbox");
@@ -66,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".close");
   const nextBtn = document.getElementById("next");
   const prevBtn = document.getElementById("prev");
+
 
   let currentIndex = 0;
   const imageArray = Array.from(images);
@@ -97,7 +100,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) lightbox.style.display = "none";
+    
   });
+    document.addEventListener("keydown", function (e) {   //adding the arroe function and "esc" to come out of image
+    if (lightbox.style.display === "flex") {
+      switch (e.key) {
+        case "Escape":
+          lightbox.style.display = "none";
+          break;
+        case "ArrowRight":
+          currentIndex = (currentIndex + 1) % imageArray.length;
+          showImage(currentIndex);
+          break;
+        case "ArrowLeft":
+          currentIndex = (currentIndex - 1 + imageArray.length) % imageArray.length;
+          showImage(currentIndex);
+          break;
+      }
+    }
+  });
+
+
+  
 });
 
 //async function getQuote() {        //I ATTEMPTED TO USE API, HOWEVER IT PROVED DIFFICULT BECUASE THE WEBSITES WERE FIGHTING AGAINST THE SCHOOLS
@@ -224,3 +248,50 @@ function checkLogin() {
     document.getElementById("error").textContent = "Incorrect password 😬";
   }
 }
+
+// weather.js
+
+const lat = -26.2041;  // Johannesburg
+const lon = 28.0473;
+const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
+
+async function fetchWeather() {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('Network response was not ok');
+    
+    const data = await res.json();
+    const weather = data.current_weather;
+    document.getElementById('weather-temp').textContent = 
+      weather.temperature.toFixed(1) + '°C';
+    document.getElementById('weather-desc').textContent = 
+      `Wind: ${weather.windspeed.toFixed(1)} km/h`;
+  } catch (err) {
+    document.getElementById('weather-desc').textContent = 
+      'Could not load weather data';
+    console.error('Weather error:', err);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', fetchWeather);
+
+ document.addEventListener('keydown', function (e) {
+  const lightbox = document.querySelector('.lightbox.active');
+  if (!lightbox) return;
+
+  const items = document.querySelectorAll('.lightbox-item');
+  let currentIndex = [...items].findIndex(el => el.classList.contains('active'));
+
+  if (e.key === 'ArrowRight') {
+    if (currentIndex < items.length - 1) {
+      items[currentIndex].classList.remove('active');
+      items[currentIndex + 1].classList.add('active');
+    }
+  }
+  if (e.key === 'ArrowLeft') {
+    if (currentIndex > 0) {
+      items[currentIndex].classList.remove('active');
+      items[currentIndex - 1].classList.add('active');
+    }
+  }
+});
