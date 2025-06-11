@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const src = imageArray[index].src.replace("-thumb", ""); // adjust if needed
     lightboxImg.src = src;
     lightbox.style.display = "flex";
+    
   }
 
   images.forEach((img, index) => {
@@ -228,26 +229,26 @@ window.onscroll = function () {
   document.getElementById("progress-bar").style.width = scrolled + "%";
 };
 
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-  document.getElementById("login").style.display = "block";
-}
+//function closePopup() {
+ // document.getElementById("popup").style.display = "none";
+  //document.getElementById("login").style.display = "block";
+//}
 
-function checkLogin() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+//function checkLogin() {
+  //const username = document.getElementById("username").value;
+  //const password = document.getElementById("password").value;
 
-  if (password === "password123") {
-    document.getElementById("login").style.display = "none";
-    document.getElementById("content").style.display = "block";
+  //if (password === "password123") {
+    //document.getElementById("login").style.display = "none";
+    //document.getElementById("content").style.display = "block";
 
     // Insert name into greeting
-    const greeting = document.getElementById("greeting");
-    greeting.textContent = `🎉 Welcome, ${username}!`;
-  } else {
-    document.getElementById("error").textContent = "Incorrect password 😬";
-  }
-}
+    //const greeting = document.getElementById("greeting");
+    //greeting.textContent = `🎉 Welcome, ${username}!`;
+  //} else {
+    //document.getElementById("error").textContent = "Incorrect password 😬";
+ /// }
+//}
 
 // weather.js
 
@@ -294,4 +295,18 @@ document.addEventListener('DOMContentLoaded', fetchWeather);
       items[currentIndex - 1].classList.add('active');
     }
   }
+});
+
+document.addEventListener("mousemove", function (e) {
+  const sparkle = document.createElement("div");
+  sparkle.classList.add("sparkle");
+
+  sparkle.style.left = `${e.pageX}px`;
+  sparkle.style.top = `${e.pageY}px`;
+
+  document.body.appendChild(sparkle);
+
+  setTimeout(() => {
+    sparkle.remove();
+  }, 800); // Matches animation duration
 });

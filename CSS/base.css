@@ -47,8 +47,23 @@ body.transitioning {
 }
 
 
-  body {
-  cursor: url('../IMAGES/1CURSOR.png') 4 0, auto;
+  .sparkle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url('../IMAGES/icons8-sparkles-32.png') no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 1;
+  animation: fadeOut 0.8s ease-out forwards;
 }
+
+@keyframes fadeOut {
+  to {
+    transform: translateY(-10px) scale(0.8);
+    opacity: 0;
+  }
+}
+
 
 

@@ -576,3 +576,11 @@ nav a {
   text-decoration: underline;
 }
 
+.lightbox-caption {
+  color: #fff;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
