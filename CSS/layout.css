@@ -48,7 +48,14 @@ header {
     padding: 1rem;
     margin-top: 3rem;
   }
+
+  footer a {
+    color: #f3eeee;
+  }
   
+  footer a:hover{
+    color: aqua;
+  }
   
   @media screen and (max-width: 600px) {
     nav a {

@@ -225,7 +225,7 @@
             </section>
 
             <section>
-                 <h2>10. Before & After: Iterative Design Changes</h2>
+                 <h2>10. Before & After: Iterative Design Changes </h2>
 
                      <h3>Homepage Layout</h3>
                   <p> Before: The homepage used a large image header that pushed important content too far down. It lacked hierarchy, making the user's first impression unclear.</p>
@@ -255,6 +255,52 @@
                   <p>Before: Alt text was missing from images and some pages lacked clear heading hierarchy.</p>
                   <p>After: I added descriptive alt text, semantic HTML elements like &lt;main&gt; and &lt;section&gt;, and made sure headings followed a logical structure (h1 → h2 → h3). This improved the accessibility and usability of the site.</p>
                   </section>
+
+                  <section id="design-improvements" class="design-section">
+                  <h2>New Additions and Improvements <span class="badge-new">New</span></h2>
+                  <p>As the project progressed, I implemented several new features and enhancements aimed at improving both functionality and user experience across the website.</p>
+
+    <p><span>Modular JavaScript Enhancements:</span> I refactored the JavaScript code to be more modular and maintainable. 
+    This involved breaking large scripts into smaller, reusable functions and centralizing event 
+    listeners to optimize performance and reduce redundancy. This approach also makes future updates 
+    easier and helps keep the codebase organized.</p>
+
+  <p><span>Interactive Lightbox Gallery:</span> To showcase portfolio images more effectively, I added an interactive lightbox modal. 
+    This feature allows users to click on images to view larger versions in a modal window, navigate through images using arrow keys,
+     and close the modal by clicking outside the image area or pressing the escape key, making the experience smooth and intuitive.</p>
+
+  <p><span>Reading Progress Indicator:</span> On blog and essay pages, I implemented a scroll-based progress bar that visually tracks 
+    how much of the content the user has read. This small UX improvement helps orient readers and encourages engagement by giving clear 
+    feedback on reading progress.</p>
+
+  <p><span>Removed the Password interactiom:</span> I had an slight issue with my password interaction code. It at somepoint just stopped
+  as in the pop up code, when you click ok to porceed into the website, was not responding. That led to me not being able to access my website.
+  I could not find out why it wasnt reacting so I just cancelled the code all together, becuase it would be more of a risk (if users arent 
+  able to even access my website.) </p>
+
+  <p><span>Local Search Bar:</span> I developed a JavaScript-powered search bar that functions completely offline and locally within the site. 
+    It allows users to quickly filter and find blog posts based on their content without relying on external APIs or servers, ensuring fast 
+    and private search functionality.</p>
+
+  <p><span>Weather API:</span> I integrated a weather API to provide real-time, location-specific weather information directly on the site. 
+    This addition enhances user engagement by delivering useful, dynamic content that changes based on the user's environment. 
+    It also demonstrates my ability to work with external APIs, fetch live data, and seamlessly incorporate it into a responsive 
+    and interactive web interface. Beyond functionality, it adds an element of personalization that can make the site feel more relevant 
+    and connected to visitors’ everyday lives. </p>
+
+  <p><span>Removed Cursor</span> Due to the original mouse cursor not being accurate when users want to click on something. 
+    I removed it and instead just addded a sprakle glow that tails the cursor, so that i can still maintain the uniqueness of my cursor
+    to my website. </p>
+
+  <p><span>Metadata and Microformats:</span> To improve SEO and comply with modern web standards, I added semantic metadata and microformats 
+    throughout the site. Elements like <code>h-card</code>, <code>p-author</code>, and <code>dt-published</code> help search engines better 
+    understand the content and provide richer search results.</p>
+
+  <p><span>Visual and Functional Polish:</span> Lastly, I added small but meaningful features like a back-to-top button for easier navigation 
+    on long pages, smooth CSS transitions for interactive elements, and consistent styling improvements to ensure a cohesive and polished look 
+    across the entire website.</p>
+</section>
+
 
 
 
@@ -288,6 +334,7 @@
                   <i class="fas fa-envelope"></i>
                 </a>
               </div>
+              <p>By <a class="u-author h-card" href="/PROFILE/profile.html">Bonolo</a></p>
               <p class="footer-copy">© 2025 Boni. All rights reserved.</p>
             </div>
           </footer>

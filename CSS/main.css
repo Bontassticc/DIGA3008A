@@ -1,17 +1,8 @@
 html {
     scroll-behavior: smooth;
   }
-  .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #0047ab;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-  }
+  
+ 
   .hero h1 {
     font-size: 4rem;
     margin: 0;
